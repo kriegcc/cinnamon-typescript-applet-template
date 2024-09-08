@@ -1,0 +1,7 @@
+{
+  "uuid": "myApplet@name",
+  "name": "MyApplet",
+  "description": "Short applet description ...",
+  "version": "0.1.0",
+  "max-instances": "-1"
+}
