@@ -1,2 +1,28 @@
 {
+  "layoutSettings": {
+    "type": "layout",
+    "pages": [
+      "pagePreferences"
+    ],
+    "pagePreferences": {
+      "type": "page",
+      "title": "Preferences",
+      "sections": [
+        "sectionGeneral"
+      ]
+    },
+    "sectionGeneral": {
+      "type": "section",
+      "title": "General",
+      "keys": [
+        "keyAppletLabel"
+      ]
+    }
+  },
+  "keyAppletLabel": {
+    "type": "entry",
+    "default": "My applet default label",
+    "description": "Label shown next to the icon",
+    "tooltip": "Use this text box to specify the label of the applet."
+  }
 }

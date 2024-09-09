@@ -13,4 +13,6 @@ export type Metadata = {
 }
 
 // representation of setting keys defined in settings-schema.json.
-export type AppletSettingsProps = object
+export type AppletSettingsProps = {
+  appletLabel: string
+}

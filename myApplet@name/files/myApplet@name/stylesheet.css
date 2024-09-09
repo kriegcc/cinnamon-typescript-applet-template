@@ -1,1 +1,9 @@
 /* TODO: add custom styles for your applet here ... */
+
+/* ==============
+ * Applet's actor
+ * ==============*/
+ .my-applet {
+  spacing: 0.5em;
+  margin: 0.2em;
+ }

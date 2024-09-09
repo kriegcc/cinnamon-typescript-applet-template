@@ -1,0 +1,50 @@
+# MYAPPLET
+# This file is put in the public domain.
+# [you-github-username], 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: myApplet@name 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-applets/"
+"issues\n"
+"POT-Creation-Date: 2024-09-09 11:57+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. my-applet.js:145
+msgid "my applet tooltip"
+msgstr ""
+
+#. my-applet.js:166
+msgid "Example popup item"
+msgstr ""
+
+#. metadata.json->name
+msgid "MyApplet"
+msgstr ""
+
+#. metadata.json->description
+msgid "Short applet description ..."
+msgstr ""
+
+#. settings-schema.json->pagePreferences->title
+msgid "Preferences"
+msgstr ""
+
+#. settings-schema.json->sectionGeneral->title
+msgid "General"
+msgstr ""
+
+#. settings-schema.json->keyAppletLabel->description
+msgid "Label shown next to the icon"
+msgstr ""
+
+#. settings-schema.json->keyAppletLabel->tooltip
+msgid "Use this text box to specify the label of the applet."
+msgstr ""
