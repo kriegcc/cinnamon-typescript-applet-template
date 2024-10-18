@@ -1,3 +1,4 @@
+import { ExampleClass } from "misc"
 import { AppletSettingsProps, Metadata } from "types"
 import { logger } from "utils/logging"
 import { _ } from "utils/translation"
@@ -51,6 +52,9 @@ export class MyApplet extends TextIconApplet {
     this.bindSettings()
     this.updateAppletLabel()
     this.initPopupMenu()
+
+    const exampleClass = new ExampleClass(10)
+    logger.logInfo("ExampleClass getValue: ", exampleClass.getValue())
   }
 
   public override on_applet_clicked(_: imports.gi.Clutter.Event): boolean {

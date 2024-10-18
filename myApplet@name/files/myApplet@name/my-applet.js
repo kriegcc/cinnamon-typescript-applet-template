@@ -50,7 +50,20 @@ const APPLET_DIR = imports.ui.appletManager.appletMeta[UUID].path;
 ;// ./src/consts/index.ts
 
 
-;// ./src/utils/logging/Logger.ts
+;// CONCATENATED MODULE: ./src/misc/ExampleClass.ts
+class ExampleClass {
+    constructor(value) {
+        this.value = value;
+    }
+    setValue(newValue) {
+        this.value = newValue;
+    }
+    getValue() {
+        return this.value;
+    }
+}
+
+;// CONCATENATED MODULE: ./src/utils/logging/Logger.ts
 
 const { isError } = imports.ui.main;
 const DEFAULT_LOG_LEVEL = "Info";
@@ -124,7 +137,8 @@ function _(text) {
 ;// ./src/utils/translation/index.ts
 
 
-;// ./src/MyApplet.ts
+;// CONCATENATED MODULE: ./src/MyApplet.ts
+
 
 
 const { TextIconApplet, AppletPopupMenu } = imports.ui.applet;
@@ -146,6 +160,8 @@ class MyApplet extends TextIconApplet {
         this.bindSettings();
         this.updateAppletLabel();
         this.initPopupMenu();
+        const exampleClass = new ExampleClass(10);
+        logger.logInfo("ExampleClass getValue: ", exampleClass.getValue());
     }
     on_applet_clicked(_) {
         logger.logInfo("My applet was clicked on ...");
