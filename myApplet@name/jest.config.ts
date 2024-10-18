@@ -1,8 +1,7 @@
-import type { Config } from "jest"
-
-const config: Config = {
+import { createDefaultPreset, JestConfigWithTsJest } from "ts-jest"
+const config: JestConfigWithTsJest = {
+  ...createDefaultPreset(),
   verbose: true,
-  preset: "ts-jest",
   testEnvironment: "node",
   moduleDirectories: ["node_modules", "<rootDir>", "src"],
 }

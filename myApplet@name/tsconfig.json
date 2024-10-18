@@ -18,7 +18,7 @@
     "noImplicitThis": true,
     "baseUrl": "./src",
     // Cinnamon TypeScript declarations
-    "types": ["@ci-types/cjs"],
+    "types": ["@ci-types/cjs", "@types/jest"],
     // misc:
     "noImplicitAny": true,
     "removeComments": true,

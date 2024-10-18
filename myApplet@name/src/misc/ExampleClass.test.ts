@@ -1,4 +1,3 @@
-import { describe, expect, test } from "@jest/globals"
 import { ExampleClass } from "misc"
 
 describe("ExampleClass", () => {
