@@ -1,5 +1,5 @@
 import { describe, expect, test } from "@jest/globals"
-import { ExampleClass } from "./ExampleClass"
+import { ExampleClass } from "misc"
 
 describe("ExampleClass", () => {
   test("returns initial value", () => {
