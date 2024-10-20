@@ -27,15 +27,12 @@
     // "noUnusedLocals": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-
     // ts webpack config file format
     // see: https://webpack.js.org/configuration/configuration-languages/
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-
     // needed to make translations work (_("some text"))
     "isolatedModules": true,
-
     // support for import js file (like settings-schema.json)
     "resolveJsonModule": true,
     "moduleResolution": "node"
@@ -52,6 +49,6 @@
       "webpack-config-scripts/**/*": "cjs"
     }
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "test/**/*"],
   "exclude": ["node_modules"]
 }

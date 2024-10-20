@@ -2,8 +2,8 @@ import { createDefaultPreset, JestConfigWithTsJest } from "ts-jest"
 const config: JestConfigWithTsJest = {
   ...createDefaultPreset(),
   verbose: true,
-  testEnvironment: "node",
-  moduleDirectories: ["node_modules", "<rootDir>", "src"],
+  testEnvironment: "./test/environments/cjsEnvironment.ts",
+  moduleDirectories: ["node_modules", "src", "test"],
 }
 
 export default config
