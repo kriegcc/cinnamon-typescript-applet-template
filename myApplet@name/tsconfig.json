@@ -17,8 +17,12 @@
     // This warns you for callbacks using this which might be not bound to the correct context.
     "noImplicitThis": true,
     "baseUrl": "./src",
+    // type stuff:
     // Cinnamon TypeScript declarations
-    "types": ["@ci-types/cjs", "@types/jest"],
+    "types": ["@ci-types/cjs", "jest", "node"],
+    // "typeRoots": ["./node_modules/@types", "./node_modules/@ci-types"],
+    // "skipLibCheck": true,
+
     // misc:
     "noImplicitAny": true,
     "removeComments": true,
@@ -26,7 +30,6 @@
     // "noUnusedParameters": true,
     // "noUnusedLocals": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
     // ts webpack config file format
     // see: https://webpack.js.org/configuration/configuration-languages/
     "allowSyntheticDefaultImports": true,
