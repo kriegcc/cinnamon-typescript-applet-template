@@ -3,8 +3,16 @@ const config: JestConfigWithTsJest = {
   ...createDefaultPreset(),
   verbose: true,
   // automock: true,
-  testEnvironment: "./test/environments/cjsEnvironment.ts",
-  moduleDirectories: ["node_modules", "src", "test"],
+  testEnvironment: "./tests/environments/cjsEnvironment.ts",
+  moduleDirectories: ["node_modules", "src", "tests"],
+  transform: {
+    "^.+\\.ts$": [
+      "ts-jest",
+      {
+        tsconfig: "tsconfig.jest.json",
+      },
+    ],
+  },
 }
 
 export default config
