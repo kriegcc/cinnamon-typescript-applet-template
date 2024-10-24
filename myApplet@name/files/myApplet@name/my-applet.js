@@ -43,14 +43,14 @@ __webpack_require__.d(__webpack_exports__, {
   main: () => (/* binding */ main)
 });
 
-;// CONCATENATED MODULE: ./src/consts/common.ts
+;// ./src/consts/common.ts
 const UUID = "myApplet@name";
 const APPLET_DIR = imports.ui.appletManager.appletMeta[UUID].path;
 
-;// CONCATENATED MODULE: ./src/consts/index.ts
+;// ./src/consts/index.ts
 
 
-;// CONCATENATED MODULE: ./src/utils/logging/Logger.ts
+;// ./src/utils/logging/Logger.ts
 
 const { isError } = imports.ui.main;
 const DEFAULT_LOG_LEVEL = "Info";
@@ -107,10 +107,10 @@ class Logger {
 }
 const logger = new Logger();
 
-;// CONCATENATED MODULE: ./src/utils/logging/index.ts
+;// ./src/utils/logging/index.ts
 
 
-;// CONCATENATED MODULE: ./src/utils/translation/translation.ts
+;// ./src/utils/translation/translation.ts
 
 const Gettext = imports.gettext;
 function _(text) {
@@ -121,10 +121,10 @@ function _(text) {
     return Gettext.gettext(text);
 }
 
-;// CONCATENATED MODULE: ./src/utils/translation/index.ts
+;// ./src/utils/translation/index.ts
 
 
-;// CONCATENATED MODULE: ./src/MyApplet.ts
+;// ./src/MyApplet.ts
 
 
 const { TextIconApplet, AppletPopupMenu } = imports.ui.applet;
@@ -179,7 +179,7 @@ class MyApplet extends TextIconApplet {
     }
 }
 
-;// CONCATENATED MODULE: ./src/applet.ts
+;// ./src/applet.ts
 
 
 
