@@ -1,0 +1,9 @@
+// Jest tsconfig
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["jest"]
+  },
+  // "include": ["tests/**/*", "src/**/*"],
+  "exclude": ["../node_modules"]
+}

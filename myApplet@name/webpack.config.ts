@@ -23,7 +23,7 @@ const config: webpack.Configuration = {
         use: {
           loader: "ts-loader",
           options: {
-            configFile: "tsconfig.build.json",
+            configFile: "src/tsconfig.json",
           },
         },
         exclude: /node_modules/,

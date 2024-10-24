@@ -1,3 +1,8 @@
+// There is clash between Jest and Cinnamon's globals. 
+// Tests and src ts configs are separated:
+// The config is extended by src/tsconfig.ts and tests/tsconfig.ts
+// VS Code's ts server only reads tsconfig.json files
+// see: https://github.com/microsoft/TypeScript/issues/27318#issuecomment-537084708
 {
   "compilerOptions": {
     "target": "ES2019",
@@ -21,6 +26,7 @@
     // support for import js file (like settings-schema.json)
     "resolveJsonModule": true,
     "moduleResolution": "node",
+    // support absolute imports
     "baseUrl": "src"
   }
 }

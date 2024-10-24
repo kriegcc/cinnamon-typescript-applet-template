@@ -1,5 +1,5 @@
 {
-  "extends": "./tsconfig.base.json",
+  "extends": "../tsconfig.base.json",
   "compilerOptions": {
     // "baseUrl": "src",
     // Cinnamon TypeScript declarations
@@ -17,7 +17,7 @@
       "webpack-config-scripts/**/*": "cjs"
     }
   },
-  "include": ["src/**/*"],
+  // "include": ["src/**/*"],
   // "exclude": ["node_modules", "**/*.test.*", "**/__mocks__/*", "**/__tests__/*"]
-  "exclude": ["node_modules", "tests"]
+  "exclude": ["../node_modules", "../tests"]
 }
