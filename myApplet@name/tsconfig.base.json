@@ -20,6 +20,7 @@
     "isolatedModules": true,
     // support for import js file (like settings-schema.json)
     "resolveJsonModule": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "baseUrl": "src"
   }
 }

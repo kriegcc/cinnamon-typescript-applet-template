@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": "./src",
+    // "baseUrl": "src",
     // Cinnamon TypeScript declarations
     "types": ["@ci-types/cjs"]
   },

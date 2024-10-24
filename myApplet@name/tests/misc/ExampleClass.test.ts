@@ -1,4 +1,5 @@
 import { ExampleClass } from "misc"
+// import { ExampleClass } from "../../src/misc"
 
 describe("ExampleClass", () => {
   test("returns initial value", () => {
