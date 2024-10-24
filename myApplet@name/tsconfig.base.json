@@ -1,4 +1,4 @@
-// There is clash between Jest and Cinnamon's globals. 
+// There is clash between Jest and Cinnamon's globals.
 // Tests and src ts configs are separated:
 // The config is extended by src/tsconfig.ts and tests/tsconfig.ts
 // VS Code's ts server only reads tsconfig.json files
