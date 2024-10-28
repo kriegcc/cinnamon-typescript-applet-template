@@ -50,7 +50,7 @@ const APPLET_DIR = imports.ui.appletManager.appletMeta[UUID].path;
 ;// ./src/consts/index.ts
 
 
-;// CONCATENATED MODULE: ./src/misc/ExampleClass.ts
+;// ./src/misc/ExampleClass.ts
 class ExampleClass {
     constructor(value) {
         this.value = value;
@@ -63,7 +63,7 @@ class ExampleClass {
     }
 }
 
-;// CONCATENATED MODULE: ./src/utils/logging/Logger.ts
+;// ./src/utils/logging/Logger.ts
 
 const { isError } = imports.ui.main;
 const DEFAULT_LOG_LEVEL = "Info";
@@ -137,7 +137,7 @@ function _(text) {
 ;// ./src/utils/translation/index.ts
 
 
-;// CONCATENATED MODULE: ./src/MyApplet.ts
+;// ./src/MyApplet.ts
 
 
 

@@ -1,10 +1,9 @@
-import path from "path"
-import webpack from "webpack"
-
-// TODO: set correct UUID: <applet-name>@<github-username>
+/* eslint-disable */
+'use strict';
+const path = require('path');
 const UUID = "myApplet@name"
 
-const config: webpack.Configuration = {
+module.exports = {
   mode: "production",
   entry: {
     index: "./src/applet.ts",
@@ -19,7 +18,7 @@ const config: webpack.Configuration = {
   module: {
     rules: [
       {
-        test: /\.ts?$/,
+        test: /\.ts$/,
         use: {
           loader: "ts-loader",
           options: {
@@ -45,6 +44,4 @@ const config: webpack.Configuration = {
     usedExports: true,
   },
   plugins: [],
-}
-
-export default config
+};
