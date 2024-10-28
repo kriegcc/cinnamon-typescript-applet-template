@@ -2,19 +2,7 @@
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
     // Cinnamon TypeScript declarations
-    "types": ["@ci-types/cjs"]
-  },
-  // necessary for webpack config in ts format, see:
-  // https://webpack.js.org/configuration/configuration-languages/
-  // https://www.npmjs.com/package/ts-node#err_unknown_file_extension
-  // https://www.npmjs.com/package/ts-node#module-type-overrides
-  "ts-node": {
-    "transpileOnly": true,
-    "moduleTypes": {
-      "webpack.config.ts": "cjs",
-      // Globs are also supported with the same behavior as tsconfig "include"
-      "webpack-config-scripts/**/*": "cjs"
-    }
+    "types": ["@ci-types/cjs"],
   },
   "exclude": ["../node_modules", "../tests"]
 }
