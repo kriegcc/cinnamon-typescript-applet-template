@@ -2,7 +2,7 @@
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
     // Cinnamon TypeScript declarations
-    "types": ["@ci-types/cjs"],
+    "types": ["@ci-types/cjs"]
   },
   "exclude": ["../node_modules", "../tests"]
 }
