@@ -1,9 +1,15 @@
+// resources:
+// https://www.kenmuse.com/blog/crash-course-jest-test-environments-with-typescript/
+// Be careful with imports CJS vs ESM
+
 import { TestEnvironment } from "jest-environment-node"
 import type { EnvironmentContext, JestEnvironmentConfig } from "@jest/environment"
 
+import { createCjsGlobals } from "./createCjsGlobals"
+
 export default class CjsEnvironment extends TestEnvironment {
   private testPath: string
-  private docblockPramas: Record<string, string | string[]>
+  private docblockPragmas: Record<string, string | string[]>
 
   constructor(config: JestEnvironmentConfig, context: EnvironmentContext) {
     super(config, context)
@@ -11,26 +17,24 @@ export default class CjsEnvironment extends TestEnvironment {
     // console.log(config.projectConfig)
     console.log("Hello from CjsEnvironment")
     this.testPath = context.testPath
-    this.docblockPramas = context.docblockPragmas
+    this.docblockPragmas = context.docblockPragmas
   }
 
   async setup() {
     await super.setup()
 
-    // Your code here
+    const cjsGlobals = createCjsGlobals()
+    console.log("--> cjsGlobals: ", cjsGlobals)
 
-    // ⋮
+    Object.assign(this.global, cjsGlobals)
+
+    // // overriding the "this.global.global" object would lead to "describe" from jest not working anymore :-(
+    // Object.assign(this.global.global, global)
+
+    // this.global.console = null
   }
 
   async teardown() {
     await super.setup()
-
-    // Your code here
-
-    // ⋮
   }
-
-  // async getVmContext() {
-  //   return super.setup()
-  // }
 }
