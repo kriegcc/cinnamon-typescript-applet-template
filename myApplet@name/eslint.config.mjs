@@ -34,7 +34,7 @@ export default tseslint.config(
   // See: https://eslint.org/docs/latest/use/configure/configuration-files#globally-ignoring-files-with-ignores
   // https://github.com/eslint/eslint/issues/17400
   {
-    ignores: ["files/**", "node_modules/**", "scripts/**", "src/types/ci-types-additions/**"],
+    ignores: ["files/**", "node_modules/**", "scripts/**", "src/types/ci-types-additions/**", "tests/environments/**"],
   },
   // should be last to override eslint rules
   eslintConfigPrettier,

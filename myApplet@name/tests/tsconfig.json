@@ -2,8 +2,9 @@
 {
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
-    "types": ["jest"]
+    "types": ["jest", "@ci-types/cjs"]
+    // TODO: uninitialized properties in import mocks (#Properties)
+    // "strictPropertyInitialization": false
   },
-  // "include": ["tests/**/*", "src/**/*"],
   "exclude": ["../node_modules"]
 }

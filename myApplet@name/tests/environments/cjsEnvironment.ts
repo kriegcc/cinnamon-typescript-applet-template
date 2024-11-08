@@ -1,7 +1,3 @@
-// resources:
-// https://www.kenmuse.com/blog/crash-course-jest-test-environments-with-typescript/
-// Be careful with imports CJS vs ESM
-
 import { TestEnvironment } from "jest-environment-node"
 import type { EnvironmentContext, JestEnvironmentConfig } from "@jest/environment"
 
@@ -24,14 +20,12 @@ export default class CjsEnvironment extends TestEnvironment {
     await super.setup()
 
     const cjsGlobals = createCjsGlobals()
-    console.log("--> cjsGlobals: ", cjsGlobals)
+    // console.log("--> cjsGlobals: ", cjsGlobals)
 
     Object.assign(this.global, cjsGlobals)
 
-    // // overriding the "this.global.global" object would lead to "describe" from jest not working anymore :-(
-    // Object.assign(this.global.global, global)
-
-    // this.global.console = null
+    // log to ensure globals are set correctly
+    // console.log("--> Global imports:", this.global.imports)
   }
 
   async teardown() {
